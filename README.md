@@ -7,7 +7,7 @@
 
 A machine learning pipeline that predicts whether a data professional is likely to **switch careers**, using demographic, education and employment attributes. It compares three supervised models (Logistic Regression, KNN, Neural Network), adds an unsupervised K-Means analysis, and checks stability with Stratified 5-Fold Cross-Validation.
 
-> 📓 **[Open the notebook](CSE422_Project.ipynb)** · 📄 **[Read the full lab report](CSE422%20Lab%20report.docx)**
+> 📓 **[Open the notebook](CSE422_Project.ipynb)** · 📄 **[Read the full lab report](CSE422%20Lab%20report.pdf)**
 
 ---
 
@@ -35,10 +35,6 @@ Knowing which candidates or employees are likely to leave helps HR teams plan hi
 
 **Missing values:** `company_type` (1,621), `company_size` (1,571), `gender` (1,113) and `major_discipline` (724) have the most gaps.
 
-<p align="center">
-  <img src="assets/class_distribution.png" width="420" alt="Class distribution">
-</p>
-
 ---
 
 ## 🔧 Pipeline
@@ -51,10 +47,6 @@ Knowing which candidates or employees are likely to leave helps HR teams plan hi
 6. **Split:** 80/20 stratified train-test split (`random_state=42`).
 7. **Imbalance handling:** `class_weight='balanced'` for Logistic Regression, plus Precision / Recall / F1 / AUC instead of accuracy alone.
 
-<p align="center">
-  <img src="assets/correlation_heatmap.png" width="600" alt="Correlation heatmap">
-</p>
-
 ---
 
 ## 🧠 Models
@@ -65,11 +57,6 @@ Knowing which candidates or employees are likely to leave helps HR teams plan hi
 | K-Nearest Neighbors | Distance-based | K chosen with an elbow plot over K = 1 to 20 |
 | Neural Network (MLP) | Non-linear model | Hidden layers `(64, 32)` |
 | K-Means | Unsupervised exploration | Elbow method on WCSS, K = 1 to 10 |
-
-<p align="center">
-  <img src="assets/knn_elbow.png" width="380" alt="KNN elbow">
-  <img src="assets/kmeans_elbow.png" width="380" alt="K-Means elbow">
-</p>
 
 ---
 
@@ -88,21 +75,6 @@ Knowing which candidates or employees are likely to leave helps HR teams plan hi
 - **Neural Network** sits in the middle on every metric.
 - All three have modest AUC (about 0.69 to 0.72). The features carry useful but limited signal.
 
-<p align="center">
-  <img src="assets/roc_curves.png" width="480" alt="ROC curves">
-</p>
-
-<details>
-<summary>Confusion matrices</summary>
-
-<p align="center">
-  <img src="assets/cm_logreg.png" width="280" alt="Logistic Regression">
-  <img src="assets/cm_knn.png" width="280" alt="KNN">
-  <img src="assets/cm_nn.png" width="280" alt="Neural Network">
-</p>
-
-</details>
-
 ### ✅ Stratified 5-Fold Cross-Validation
 
 Accuracy stays within a narrow band across folds, so results do not depend on one lucky split:
@@ -112,10 +84,6 @@ Accuracy stays within a narrow band across folds, so results do not depend on on
 | Logistic Regression | 0.69 to 0.72 |
 | KNN | 0.75 to 0.77 |
 | Neural Network | 0.75 to 0.78 |
-
-<p align="center">
-  <img src="assets/cv_accuracy.png" width="480" alt="Cross-validation accuracy">
-</p>
 
 ---
 
@@ -138,7 +106,7 @@ Accuracy stays within a narrow band across folds, so results do not depend on on
 ## 🚀 Run it yourself
 
 ```bash
-git clone https://github.com/sajedulislam5840/CSE422.git
+git clone [https://github.com/sajedulislam5840/CSE422.git](https://github.com/sajedulislam5840/CSE422.git)
 cd CSE422
 pip install -r requirements.txt
 jupyter notebook CSE422_Project.ipynb
