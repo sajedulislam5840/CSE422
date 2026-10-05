@@ -7,7 +7,7 @@
 
 A machine learning pipeline that predicts whether a data professional is likely to **switch careers**, using demographic, education and employment attributes. It compares three supervised models (Logistic Regression, KNN, Neural Network), adds an unsupervised K-Means analysis, and checks stability with Stratified 5-Fold Cross-Validation.
 
-> 📓 **[Open the notebook](./CSE422_Project.ipynb)** · 📄 **[Read the full lab report](./CSE422_Lab_Report.pdf)**
+> 📓 **[Open the notebook](CSE422_Project.ipynb)** · 📄 **[Read the full lab report](CSE422%20Lab%20report.pdf)**
 
 ---
 
@@ -119,7 +119,7 @@ Accuracy stays within a narrow band across folds, so results do not depend on on
 
 ---
 
-## ⚠️ Limitations and next steps
+## ⚠️️ Limitations and next steps
 
 - Imputation, encoding and scaling were fit on the full dataset before splitting, which can leak information. A scikit-learn `Pipeline` fixed inside each CV fold would be cleaner.
 - K for KNN was chosen using test-set error. Choosing it with cross-validation would be more reliable.
