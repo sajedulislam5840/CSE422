@@ -131,7 +131,10 @@ CSE422/
 
 ## 👤 Author
 
-**Mir Mohammad Sajedul Islam** ([@sajedulislam5840](https://github.com/sajedulislam5840))
-Python · Java · C++ · SQL | Data Science, AI and Automation
+**Mir Mohammad Sajedul Islam**  
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?logo=github)](https://github.com/sajedulislam5840)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin)](https://www.linkedin.com/in/sajedul-islam-data/)
+
+Python · Java · C++ · SQL | Data Science, AI and Automation  
 
 *Built for CSE422 (Artificial Intelligence), BRAC University.*
