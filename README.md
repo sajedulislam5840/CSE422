@@ -7,7 +7,7 @@
 
 A machine learning pipeline that predicts whether a data professional is likely to **switch careers**, using demographic, education and employment attributes. It compares three supervised models (Logistic Regression, KNN, Neural Network), adds an unsupervised K-Means analysis, and checks stability with Stratified 5-Fold Cross-Validation.
 
-> 📓 **[Open the notebook](CSE422_Project.ipynb)** · 📄 **[Read the full lab report](CSE422%20Lab%20report.docx)**
+> 📓 **[Open the notebook](CSE422_Project.ipynb)** · 📄 **[Read the full lab report](CSE422_Lab_Report.pdf)**
 
 ---
 
