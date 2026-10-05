@@ -7,7 +7,7 @@
 
 A machine learning pipeline that predicts whether a data professional is likely to **switch careers**, using demographic, education and employment attributes. It compares three supervised models (Logistic Regression, KNN, Neural Network), adds an unsupervised K-Means analysis, and checks stability with Stratified 5-Fold Cross-Validation.
 
-> 📓 **[Open the notebook](CSE422_Project.ipynb)** · 📄 **[Read the full lab report](CSE422%20Lab%20report.pdf)**
+> 📓 **[Open the notebook](CSE422_Project.ipynb)** · 📄 **[Read the full lab report](CSE422%20Lab%20report.docx)**
 
 ---
 
@@ -119,7 +119,7 @@ Accuracy stays within a narrow band across folds, so results do not depend on on
 
 ---
 
-## ⚠️️ Limitations and next steps
+## ⚠️ Limitations and next steps
 
 - Imputation, encoding and scaling were fit on the full dataset before splitting, which can leak information. A scikit-learn `Pipeline` fixed inside each CV fold would be cleaner.
 - K for KNN was chosen using test-set error. Choosing it with cross-validation would be more reliable.
@@ -138,7 +138,32 @@ Accuracy stays within a narrow band across folds, so results do not depend on on
 ## 🚀 Run it yourself
 
 ```bash
-git clone [https://github.com/sajedulislam5840/CSE422.git](https://github.com/sajedulislam5840/CSE422.git)
+git clone https://github.com/sajedulislam5840/CSE422.git
 cd CSE422
 pip install -r requirements.txt
 jupyter notebook CSE422_Project.ipynb
+```
+
+Place `Career_Switch_Prediction_Dataset.csv` in the project root before running (see the notebook's first cell).
+
+---
+
+## 📁 Repository structure
+
+```
+CSE422/
+├── CSE422_Project.ipynb      # Full pipeline: EDA → models → evaluation
+├── CSE422 Lab report.docx    # Detailed project report
+├── assets/                   # Figures used in this README
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 👤 Author
+
+**Mir Mohammad Sajedul Islam** ([@sajedulislam5840](https://github.com/sajedulislam5840))
+Python · Java · C++ · SQL | Data Science, AI and Automation
+
+*Built for CSE422 (Artificial Intelligence), BRAC University.*
