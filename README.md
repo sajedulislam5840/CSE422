@@ -88,17 +88,15 @@ These missing values are addressed during preprocessing using appropriate imputa
 The project follows a structured machine learning workflow, from exploratory analysis to comparative evaluation.
 
 ```mermaid
-flowchart TD
-    A[Raw Dataset] --> B[Exploratory Data Analysis]
-    B --> C[Feature Selection]
-    C --> D[Missing Value Imputation]
-    D --> E[Categorical Encoding]
-    E --> F[Feature Scaling]
-    F --> G[Stratified Train-Test Split]
-    G --> H[Model Training]
-    H --> I[Stratified 5-Fold Cross-Validation]
-    I --> J[Holdout Test Evaluation]
-    J --> K[Model Comparison]
+flowchart LR
+    A["Raw Data"] --> B["EDA & Feature Selection"]
+    B --> C["Imputation: Median & Mode"]
+    C --> D["Encoding: Ordinal & One-Hot"]
+    D --> E["StandardScaler Normalization"]
+    E --> F["Stratified 80/20 Train-Test Split"]
+    F --> G["Model Training & Imbalance Balancing"]
+    G --> H["Stratified 5-Fold Cross-Validation"]
+    H --> I["ROC-AUC & F1 Evaluation"]
 ```
 
 ### Preprocessing Strategy
